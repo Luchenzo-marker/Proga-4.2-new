@@ -1,0 +1,2 @@
+g++ -shared -o queue_manual.dll queue_manual.cpp -std=c++11
+pause
