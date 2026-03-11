@@ -6,7 +6,7 @@ ext_module = Extension(
     sources=['queue_stl_pybind.cpp'],
     include_dirs=[pybind11.get_include()],
     language='c++',
-    extra_compile_args=['-std=c++11', '-O3', '-Wall'],
+    extra_compile_args=['-std=c++11','-O3','-Wall'],
 )
 
 setup(
@@ -14,4 +14,5 @@ setup(
     version='1.0',
     description='Очередь на STL через pybind11',
     ext_modules=[ext_module],
+
 )
