@@ -57,7 +57,7 @@ public:
 bool Queue::seeded = false;
 
 PYBIND11_MODULE(queue_stl_pybind, m) {
-    m.doc() = "Очередь на C++ с использованием STL и pybind11";
+    m.doc() = "Очередь на C++";
 
     py::class_<Queue>(m, "Queue")
         .def(py::init<>())
@@ -70,4 +70,5 @@ PYBIND11_MODULE(queue_stl_pybind, m) {
         .def("clear", &Queue::clear)
         .def("fill_random", &Queue::fill_random)
         .def("get_all", &Queue::get_all);
+
 }
